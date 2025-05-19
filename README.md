@@ -18,3 +18,8 @@ This is a command-line interface (CLI) tool implementing Simplified DES (S-DES) 
 2. **Install required Python packages**:
 
 Open a terminal or command prompt and run:
+
+## Running the Tool
+
+Navigate to the project directory in your terminal and run:
+py main.py
