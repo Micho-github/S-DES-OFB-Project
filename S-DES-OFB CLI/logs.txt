@@ -1,0 +1,27 @@
+
+[2025-05-19T18:03:27.936124] Encryption - Message
+Key: 1010101010 | IV: 01010101
+Input: 'hello brotherss'
+Output: 'bd5639b95c75b7413aa15b30a74026'
+----------------------------------------
+[2025-05-19T18:05:50.902625]Encryption - Message | Key: 1010101010 | IV: 01010101
+Input: 'hello brother' => Output: 'bd5639b95c75b7413aa15b30a7'
+----------------------------------------
+[2025-05-19T19:41:44.415012]Encryption - File | Key: 1010101010 | IV: 01010101
+Input: 'input.txt (13 bytes)' => Output: 'output.txt (13 bytes)'
+----------------------------------------
+[2025-05-19T19:49:28.173789]Encryption - File | Key: 1010101010 | IV: 01010101
+Input: 'input.txt (13 bytes)' => Output: 'output.txt (13 bytes)'
+----------------------------------------
+[2025-05-19T19:53:06.556641]Encryption - File | Key: 1010101010 | IV: 01010101
+Input: 'image.png (931359 bytes)' => Output: 'output.png (931359 bytes)'
+----------------------------------------
+[2025-05-19T20:09:44.292908]Decryption - Message | Key: 1010101010 | IV: 01010101
+Input: 'bd5639b95c75b7413aa15b30a7' => Output: 'hello brother'
+----------------------------------------
+[2025-05-19T20:24:55.497944]Brute Force Attack - Success | Key: 1010101010 | IV: 01010101
+Input: 'hello brother' => Output: 'key found 1010101010'
+----------------------------------------
+[2025-05-19T20:25:47.049060]Cryptanalysis Attack - Success | Key: 1010101010 | IV: 01010101
+Input: '2 plaintext-ciphertext pairs' => Output: 'Key found 1010101010'
+----------------------------------------
