@@ -1,25 +1,57 @@
-# S-DES-OFB-Project
+# S-DES OFB – Encryption CLI Tool
 
-This is a command-line interface (CLI) tool implementing Simplified DES (S-DES) encryption and decryption in Output Feedback (OFB) mode. It supports text and file encryption/decryption, brute force key search, and cryptanalysis attacks.
-
----
-
-## Prerequisites
-
-- Python 3.6 or higher installed on your system.
-- The `colorama` Python package for colored terminal output.
+A simple command-line tool to demonstrate Simplified DES (S-DES) encryption using Output Feedback (OFB) mode. Great for learning how encryption, brute force, and cryptanalysis work.
 
 ---
 
-## Installation
+## What Is This?
 
-1. **Clone or download the project files** to your local machine.
+- S-DES: A simplified version of the DES algorithm using 10-bit keys and 8-bit blocks.
+- OFB Mode: Turns block ciphers into stream ciphers using an Initialization Vector (IV) and keystream.
 
-2. **Install required Python packages**:
+---
 
-Open a terminal or command prompt and run:
+## Requirements
 
-## Running the Tool
+- Python 3.6 or higher  
+- Install the only required package:
+```bash
+pip install colorama
+```
 
-Navigate to the project directory in your terminal and run:
-py main.py
+---
+
+## Getting Started
+
+1. Download the project:
+```bash
+git clone <repository-url>
+cd S-DES-OFB-Project
+```
+
+2. Run the program:
+```bash
+python main.py
+```
+
+---
+
+## Operations
+
+### 1. Generate Key
+- Creates a random 10-bit key and shows how it's used.
+
+### 2. Encrypt (Text or File)
+- Input key and IV to encrypt a message or file.
+
+### 3. Decrypt (Text or File)
+- Input key, IV, and ciphertext to decrypt back to the original.
+
+### 4. Brute Force
+- Try all 1024 possible keys to find the correct one.
+
+### 5. Cryptanalysis
+- Use multiple known plaintext-ciphertext pairs to discover the key.
+
+### 6. Exit
+- Quit the application.
